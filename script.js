@@ -85,4 +85,83 @@ for(let i = 0; i < num.length; i++ ){
 
 function numCheck(input){
 
+    if(input % 2 === 0){
+        console.log(`${input}, is a even number`);
+    }else{
+        console.log(`${input}, is a odd number`);
+        
+    }
+
+}
+
+numCheck(8);
+
+
+
+// 4.
+
+let info = {
+    name: "Peter",
+    age: 14,
+    city: "Jos"
+}
+
+console.log(info.name);
+console.log(info.age);
+console.log(info.city);
+
+
+
+// 5.
+
+function sum(num1, num2){
+
+    let sum =  num1 + num2
+
+    console.log(sum);
+    
+
+}
+
+sum(2,5);
+
+
+
+// 6.
+
+function reverse(inputStr){
+    return inputStr.split('').reverse().join('');
+}
+
+console.log(reverse("hello"));
+
+
+
+// 7.
+
+
+function largestNumFind(arr){
+    if (arr.length === 0) 
+    return "Array is empty";
+
+    return Math.max(...arr);
+}
+
+console.log(largestNumFind([1,5,9,50,30,67,92,3,7]));
+
+
+// 8.
+
+function celsiusToFahrenheit(celsius) {
+
+    return celsius * (9 / 5) + 32;
+  }
+
+console.log(celsiusToFahrenheit(30));
+
+
+// 9.
+
+function primeCheck(){
+    
 }
