@@ -1,20 +1,10 @@
 // JavaScript Hands-On Coding Challenges (50 Questions)
 // 🟢 Beginner (1–20)
-// 1. Write a function that takes a number and returns its square. *
-// 2. Create an array of 5 numbers and print each one using a loop. *
-// 3. Write a function that checks if a number is even or odd. 
-// 4. Create an object with properties name, age, and city, then log each property.
-// 5. Write a function that returns the sum of two numbers.
-// 6. Write a program that reverses a string.
-// 7. Create a function that finds the largest number in an array.
-// 8. Write a function that converts Celsius to Fahrenheit.
-// 9. Create a function that checks if a number is prime.
-// 10. Write a function that returns the length of a string.
-// 11. Create a function that multiplies all elements in an array.
-// 12. Write a function that returns the last element of an array.
-// 13. Create a function that returns true if a number is divisible by 3 and 5.
-// 14. Write a function that removes the first element from an array.
-// 15. Write a program that adds all numbers from 1 to n using a loop.
+
+
+
+
+
 // 16. Write a function that returns the smallest number in an array.
 // 17. Create a function that returns the difference between two numbers.
 // 18. Write a function that joins all elements of an array into a string.
@@ -56,7 +46,7 @@
 
 
 
-// 1.
+// 1.  Write a function that takes a number and returns its square.
 
 function square(num){
 
@@ -69,7 +59,7 @@ console.log(square(10));
 
 
 
-// 2.
+// 2.  Create an array of 5 numbers and print each one using a loop. 
 
 
 let num = [1,6,34,80,5]
@@ -81,7 +71,7 @@ for(let i = 0; i < num.length; i++ ){
 
 
 
-// 3.
+// 3. Write a function that checks if a number is even or odd. 
 
 function numCheck(input){
 
@@ -98,7 +88,7 @@ numCheck(8);
 
 
 
-// 4.
+// 4.  Create an object with properties name, age, and city, then log each property.
 
 let info = {
     name: "Peter",
@@ -112,7 +102,7 @@ console.log(info.city);
 
 
 
-// 5.
+// 5. Write a function that returns the sum of two numbers.
 
 function sum(num1, num2){
 
@@ -127,7 +117,7 @@ sum(2,5);
 
 
 
-// 6.
+// 6. Write a program that reverses a string.
 
 function reverse(inputStr){
     return inputStr.split('').reverse().join('');
@@ -137,8 +127,7 @@ console.log(reverse("hello"));
 
 
 
-// 7.
-
+// 7. Create a function that finds the largest number in an array.
 
 function largestNumFind(arr){
     if (arr.length === 0) 
@@ -150,7 +139,8 @@ function largestNumFind(arr){
 console.log(largestNumFind([1,5,9,50,30,67,92,3,7]));
 
 
-// 8.
+
+// 8.  Write a function that converts Celsius to Fahrenheit.
 
 function celsiusToFahrenheit(celsius) {
 
@@ -160,8 +150,114 @@ function celsiusToFahrenheit(celsius) {
 console.log(celsiusToFahrenheit(30));
 
 
-// 9.
 
-function primeCheck(){
+// 9. Create a function that checks if a number is prime.
+
+function primeCheck(input){
+
+     if(input % 2 === 0){
+        console.log(`${input}, is not a prime number`);
+    }else{
+        console.log(`${input}, is a prime number`);
+        
+    }
     
 }
+
+
+primeCheck(13)
+
+
+
+// 10.  Write a function that returns the length of a string.
+
+function stringLength(str){
+
+ for(let i = 0; i <= str.length; i++){
+    console.log(`String length is ${str.length}`);
+    break
+ }
+ 
+    
+}
+
+stringLength("Hello World");
+
+
+
+// 11. Create a function that multiplies all elements in an array.
+
+function arrayMultiplies(arr) {
+    let result = 1;
+  
+    for (let i = 0; i < arr.length; i++) {
+      result *= arr[i];
+    }
+  
+    return result;
+  }
+  
+  console.log(arrayMultiplies([2, 5, 2])); 
+
+
+
+  // 12. Write a function that returns the last element of an array.
+
+  function lastElement(array){
+    let last = array.length - 1
+    for(let i = 0; i < array.length; i++){
+        console.log(array[last]);
+        break
+        
+    }
+  }
+
+  lastElement([1,2,3,45]);
+
+
+
+// 13. Create a function that returns true if a number is divisible by 3 and 5.
+
+function divisibleCheck(input){
+
+    if(input % 3 === 0 && input % 5 === 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+console.log(divisibleCheck(15));
+
+
+
+// 14. Write a function that removes the first element from an array.
+
+function removeFirst(arr){
+
+    let remove = arr.splice(0,1)
+    if(arr == arr){
+        remove
+        return arr
+    }
+    
+}
+
+console.log(removeFirst([1,2,3,4,5]));
+
+
+
+// 15. Write a program that adds all numbers from 1 to n using a loop.
+
+function sumLoop(n) {
+    let sum = 0;
+  
+    for (let i = 1; i <= n; i++) {
+      sum += i;
+    }
+  
+    return sum;
+  }
+
+ console.log( sumLoop(4));
+ 
