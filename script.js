@@ -5,9 +5,9 @@
 
 
 
-// 16. Write a function that returns the smallest number in an array.
-// 17. Create a function that returns the difference between two numbers.
-// 18. Write a function that joins all elements of an array into a string.
+
+
+
 // 19. Write a function that checks if a string contains the letter 'a'.
 // 20. Create a function that converts minutes to seconds.
 // 🟡 Intermediate (21–35)
@@ -260,4 +260,39 @@ function sumLoop(n) {
   }
 
  console.log( sumLoop(4));
+
+
+
+// 16. Write a function that returns the smallest number in an array.
  
+function smallNum(arr){
+
+    if (arr.length === 0) 
+        return "Array is empty";
+    
+        return Math.min(...arr);
+    
+}
+
+console.log(smallNum([3,5,8,99,65]));
+
+
+
+// 17. Create a function that returns the difference between two numbers.
+
+function difference(num1, num2){
+
+    let differences = num1 - num2
+
+    return differences
+}
+
+console.log(difference(10,4));
+
+
+
+// 18. Write a function that joins all elements of an array into a string.
+
+function joinStr(){
+    
+}
