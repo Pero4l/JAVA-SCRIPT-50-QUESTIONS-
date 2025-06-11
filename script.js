@@ -1,18 +1,9 @@
 // JavaScript Hands-On Coding Challenges (50 Questions)
 // 🟢 Beginner (1–20)
 
-
-
-
-
-
-
-
-// 19. Write a function that checks if a string contains the letter 'a'.
-// 20. Create a function that converts minutes to seconds.
 // 🟡 Intermediate (21–35)
-// 21. Write a function that removes duplicates from an array.
-// 22. Create a function that capitalizes the first letter of each word in a string.
+
+
 // 23. Write a function that counts the number of vowels in a string.
 // 24. Write a function that returns true if a string is a palindrome.
 // 25. Create a function that returns the factorial of a number.
@@ -293,6 +284,64 @@ console.log(difference(10,4));
 
 // 18. Write a function that joins all elements of an array into a string.
 
-function joinStr(){
+function joinStr(arr, separator) {
+    return arr.join(separator);
+  }
+  
+  console.log(joinStr(['BMW', 'Benz', 'Bently'], ', '));
+
+
+
+// 19. Write a function that checks if a string contains the letter 'a'.
+
+function checkA(input) {
+    if (input.includes('a') || input.includes('A')) {
+      return `A is available in "${input}"`;
+    } else {
+      return `A is not available in "${input}"`;
+    }
+  }
+  
+  console.log(checkA("apple")); 
+  console.log(checkA("Hello"));  
+
+
+
+  // 20. Create a function that converts minutes to seconds.
+
+  function minutesConverter(minutes){
+    let seconds = 60
+    let min = 1
+    min = seconds
+    let convert = minutes * min
+
+    console.log(convert);
     
-}
+
+  }
+
+  minutesConverter(2);
+
+
+
+// 21. Write a function that removes duplicates from an array.
+
+function removeDup(arr) {
+    let unique = [];
+  
+    for (let i = 0; i < arr.length; i++) {
+      if (!unique.includes(arr[i])) {
+        unique.push(arr[i]);
+      }
+    }
+  
+    return unique;
+  }
+
+  console.log(removeDup(['car', 'house', 'car']));
+  
+
+
+  // 22. Create a function that capitalizes the first letter of each word in a string.
+
+  
